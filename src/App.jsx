@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import { Menu, X, Leaf, Sprout, BarChart3, Users, Mail, Phone, MapPin, ChevronDown, ChevronUp, Send, Instagram, Facebook, Twitter,Linkedin, Loader2, CheckCircle, AlertCircle, Zap, Settings, Cpu, Info, Award, Trophy, Target } from 'lucide-react';
 import logo from './logo.jpg';
+
 import heroImage from "./images/Award1.jpeg"; // or your chosen group/machine photo
+
+// --- gallery image imports ---
+import g1 from './images/ArecanutImg1.jpeg';
+import g2 from './images/ArecanutImg2.jpeg';
+import g3 from './images/SprinklerImg.jpeg';
+import g4 from './images/Award1.jpeg';
+import g5 from './images/Award2.jpeg';
+import g6 from './images/Award3.jpeg';
 
 
 
@@ -638,17 +647,17 @@ const AchievementsPage = () => (
         <div className="grid lg:grid-cols-3 gap-8 mb-8">
             {/* Image Placeholder 1: Arecanut */}
             <div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center border border-gray-200 relative overflow-hidden group">
-                <img src={"src/images/ArecanutImg1.jpeg"} className="w-full h-full object-cover" />
+                <img src={g1} className="w-full h-full object-cover" />
             </div>
 
              {/* Image Placeholder 2: Arecanut */}
              <div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center border border-gray-200 relative overflow-hidden group">
-                <img src={"src/images/ArecanutImg2.jpeg"} className="w-full h-full object-cover" />
+                <img src={g2} className="w-full h-full object-cover" />
             </div>
 
              {/* Image Placeholder 3: Sprinkler */}
              <div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center border border-gray-200 relative overflow-hidden group">
-                <img src={"src/images/SprinklerImg.jpeg"} className="w-full h-full object-cover" />
+                <img src={g3} className="w-full h-full object-cover" />
             </div>
         </div>
 
@@ -679,17 +688,17 @@ const AchievementsPage = () => (
         <div className="grid lg:grid-cols-3 gap-8 mb-8">
             {/* Image Placeholder 1: Award */}
             <div className="aspect-[4/3] bg-gray-100 rounded-xl flex items-center justify-center border border-gray-200 relative overflow-hidden group">
-                <img src={"src/images/Award1.jpeg"} className="w-full h-full object-cover" />
+                <img src={g4} className="w-full h-full object-cover" />
             </div>
 
              {/* Image Placeholder 2: Award */}
              <div className="aspect-[4/3] bg-gray-100 rounded-xl flex items-center justify-center border border-gray-200 relative overflow-hidden group">
-                <img src={"src/images/Award2.jpeg"} className="w-full h-full object-cover" />
+                <img src={g5} className="w-full h-full object-cover" />
             </div>
 
              {/* Image Placeholder 3: Award */}
              <div className="aspect-[4/3] bg-gray-100 rounded-xl flex items-center justify-center border border-gray-200 relative overflow-hidden group">
-                <img src={"src/images/Award3.jpeg"} className="w-full h-full object-cover" />
+                <img src={g6} className="w-full h-full object-cover" />
             </div>
         </div>
 
@@ -724,16 +733,6 @@ const AchievementsPage = () => (
 );
 
       {/* SECTION  - GALLERY */}
-
-// --- gallery image imports ---
-import g1 from './images/ArecanutImg1.jpeg';
-import g2 from './images/ArecanutImg2.jpeg';
-import g3 from './images/SprinklerImg.jpeg';
-import g4 from './images/Award1.jpeg';
-import g5 from './images/Award2.jpeg';
-import g6 from './images/Award3.jpeg';
-
-
 
 const galleryItems = [
   {
