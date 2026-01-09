@@ -17,7 +17,7 @@ import g6 from './images/Award3.jpeg';
 // --- CONFIGURATION ---
 
 // 1. CHANGE THIS to your real Gmail address to receive messages
-const CONTACT_EMAIL = "info@mrittika.com"; 
+const CONTACT_EMAIL = "mrittikaagrotech25@gmail.com"; 
 
 // 2. DEMO MODE
 // Set to 'false' to enable real email sending.
@@ -888,7 +888,7 @@ const ContactPage = ({ formData, handleInputChange, handleSendMessage, isSubmitt
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900">Phone</h3>
-                <p className="text-gray-600">+91 XXXXXXXXXX</p>
+                <p className="text-gray-600">+91 7975270723 / +91 6364617823 / +91 8197023623</p>
               </div>
             </div>
 
