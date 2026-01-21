@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import { Menu, X, Leaf, Sprout, BarChart3, Users, Mail, Phone, MapPin, ChevronDown, ChevronUp, Send, Instagram, Facebook, Twitter,Linkedin, Loader2, CheckCircle, AlertCircle, Zap, Settings, Cpu, Info, Award, Trophy, Target } from 'lucide-react';
-import logo from './logo.jpg';
 
-import heroImage from "./images/Award1.jpeg"; // or your chosen group/machine photo
+// --- IMAGE PLACEHOLDERS (Replaced local imports with placeholders for compilation) ---
+// You can uncomment the imports and remove these consts when running locally with your files.
+
+import logo from './logo.jpg';
+// const logo = "https://placehold.co/150x50/white/green?text=Mrittika+Logo";
+
+import heroImage from "./images/Award1.jpeg"; 
+// const heroImage = "https://images.unsplash.com/photo-1625246333195-58197bd47d72?auto=format&fit=crop&q=80&w=1000"; // Generic Agriculture Image
 
 // --- gallery image imports ---
 import g1 from './images/ArecanutImg1.jpeg';
@@ -12,6 +18,23 @@ import g4 from './images/Award1.jpeg';
 import g5 from './images/Award2.jpeg';
 import g6 from './images/Award3.jpeg';
 
+import manoj from "./images/team/manoj.jpg";
+import deekshith from "./images/team/deekshith.jpg";
+import shivaramu from "./images/team/shivaramu.jpg";
+import yuvaraj from "./images/team/yuvaraj.jpg";
+import deepak from "./images/team/deepak.jpg";
+import swasthik from "./images/team/swasthik.jpg";
+import pradhyumna from "./images/team/pradhyumna.jpg";
+
+
+
+// ...
+// const g1 = "https://placehold.co/600x400/e2e8f0/1e293b?text=Arecanut+Prototype";
+// const g2 = "https://placehold.co/600x400/e2e8f0/1e293b?text=Field+Work";
+// const g3 = "https://placehold.co/600x400/e2e8f0/1e293b?text=Sprinkler+System";
+// const g4 = "https://placehold.co/600x400/fef3c7/92400e?text=Award+Ceremony";
+// const g5 = "https://placehold.co/600x400/fef3c7/92400e?text=Innovation+Pitch";
+// const g6 = "https://placehold.co/600x400/fef3c7/92400e?text=Team+Recognition";
 
 
 // --- CONFIGURATION ---
@@ -133,7 +156,7 @@ const Footer = ({ navigate }) => (
             <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white">
               <Facebook size={18} />
             </a>
-            <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white">
+            <a href="https://www.instagram.com/mrittika_agro_tech_llp?utm_source=qr&igsh=N2dwNWtzdmVzdXFy" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white">
               <Instagram size={18} />
             </a>
             <a href="#" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white">
@@ -536,6 +559,151 @@ const ProductsPage = () => (
 );
 
 // --- ABOUT PAGE ---
+
+// 1. FOUNDERS & DIRECTORS
+const founders = [
+  {
+    name: "Manoj Kumar B V",
+    role: "Founder & Director",
+    responsibility:
+      "Company vision, engineering strategy, and overall governance.",
+    photo: manoj
+  },
+  {
+    name: "Deekshith K Gowda",
+    role: "Co-Founder & Director",
+    responsibility:
+      "Strategic planning, product direction, and operational oversight.",
+    photo: deekshith
+  }
+];
+
+// 2. EXECUTIVE LEADERSHIP
+const executives = [
+  {
+    name: "Dr. Shivaramu H T",
+    role: "Chief Executive Officer (CEO)",
+    responsibility:
+      "Organizational leadership, execution strategy, and external coordination.",
+    photo: shivaramu
+  },
+  {
+    name: "Mr. Yuvaraj K B",
+    role: "Chief Financial Officer (CFO)",
+    responsibility:
+      "Financial planning, budgeting, compliance, and fiscal governance.",
+    photo: yuvaraj
+  }
+];
+
+// 3. CORE ENGINEERING TEAM
+const engineeringTeam = [
+  {
+    name: "Deepak K K",
+    role: "Electrical Head",
+    responsibility:
+      "Electrical system design, integration, and validation.",
+    photo: deepak
+  },
+  {
+    name: "Swasthik",
+    role: "Design & Analysis Head",
+    responsibility:
+      "Mechanical design, simulation, and structural analysis.",
+    photo: swasthik
+  },
+  {
+    name: "Pradhyumna Murthy",
+    role: "Research & Development Head",
+    responsibility:
+      "R&D planning, experimentation, and prototype improvement.",
+    photo: pradhyumna
+  }
+];
+
+// --- REUSABLE CARD ---
+const ProfileCard = ({ name, role, responsibility, photo }) => (
+  <div className="bg-white border border-gray-200 rounded-2xl p-6 text-center shadow-sm">
+    {/* Placeholder Avatar */}
+    <img
+        src={photo}
+        alt={name}
+        className="w-24 h-24 mx-auto mb-4 rounded-full object-cover border border-gray-200"
+      />
+
+    <h3 className="font-bold text-gray-900">{name}</h3>
+    <p className="text-sm text-green-700 font-semibold uppercase mt-1">
+      {role}
+    </p>
+
+    <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+      {responsibility}
+    </p>
+  </div>
+);
+
+// --- SECTION COMPONENTS ---
+const FoundersSection = () => (
+  <section className="mt-20 pt-16 border-t border-gray-100">
+    <div className="max-w-5xl mx-auto px-4">
+      <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">
+        Founders & Directors
+      </h2>
+      <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+        Responsible for vision, governance, and long-term strategic direction
+        of Mrittika Agro Tech LLP.
+      </p>
+
+      <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        {founders.map((person, idx) => (
+          <ProfileCard key={idx} {...person} />
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+const ExecutiveSection = () => (
+  <section className="mt-16">
+    <div className="max-w-5xl mx-auto px-4">
+      <h2 className="text-2xl font-bold text-gray-900 text-center mb-4">
+        Executive Leadership
+      </h2>
+      <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+        Responsible for organizational operations, execution, and financial
+        governance.
+      </p>
+
+      <div className="grid sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        {executives.map((person, idx) => (
+          <ProfileCard key={idx} {...person} />
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+const EngineeringSection = () => (
+  <section className="mt-16">
+    <div className="max-w-6xl mx-auto px-4">
+      <h2 className="text-2xl font-bold text-gray-900 text-center mb-4">
+        Core Engineering & Technical Team
+      </h2>
+      <p className="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+        Responsible for product design, development, testing, and field
+        validation.
+      </p>
+
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {engineeringTeam.map((person, idx) => (
+          <ProfileCard key={idx} {...person} />
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+
 const AboutPage = () => (
   <div className="animate-in fade-in duration-500 py-16 bg-white">
     <div className="container mx-auto px-4 max-w-4xl">
@@ -616,6 +784,11 @@ const AboutPage = () => (
       </div>
 
     </div>
+    
+    {/* NEW HIERARCHICAL LEADERSHIP SECTION */}
+    <FoundersSection />
+    <ExecutiveSection />
+    <EngineeringSection />
   </div>
 );
 
