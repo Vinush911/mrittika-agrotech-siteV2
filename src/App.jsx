@@ -150,8 +150,11 @@ const Footer = ({ navigate }) => (
         <div>
           <h4 className="text-white font-semibold mb-4">Connect With Us</h4>
           <div className="flex gap-4">
-            <a href="#" aria-label="Twitter" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white">
-              <Twitter size={18} />
+            <a href="mrittikaagrotech25@gmail.com"
+              aria-label="Email"
+              className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white"
+            >
+              <Mail size={18} />
             </a>
             <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white">
               <Facebook size={18} />
@@ -159,7 +162,7 @@ const Footer = ({ navigate }) => (
             <a href="https://www.instagram.com/mrittika_agro_tech_llp?utm_source=qr&igsh=N2dwNWtzdmVzdXFy" aria-label="Instagram" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white">
               <Instagram size={18} />
             </a>
-            <a href="#" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white">
+            <a href="https://www.linkedin.com/in/manoj-kumar-bv-1940a525a/#" aria-label="LinkedIn" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white">
               <Linkedin size={18} />
             </a>
           </div>
@@ -898,7 +901,50 @@ const AchievementsPage = () => (
                 </ul>
             </div>
         </div>
+        {/* SECTION - COMPETITION ACHIEVEMENTS */}
+          <div className="mt-16">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-3 bg-green-100 text-green-700 rounded-lg">
+                🏅
+              </div>
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  Competition Achievements
+                </h2>
+                <p className="text-gray-600">
+                  Recognition received at national and regional innovation platforms.
+                </p>
+              </div>
+            </div>
 
+            <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
+              <ul className="divide-y divide-gray-200">
+                <li className="p-6 flex items-start gap-4">
+                  <span className="text-2xl">🥇</span>
+                  <p className="font-medium text-gray-800">
+                    Secured <strong>1st Place</strong>, ANVESHANA 2024–25 National Level
+                    Project Championship, Bengaluru
+                  </p>
+                </li>
+
+                <li className="p-6 flex items-start gap-4">
+                  <span className="text-2xl">🥇</span>
+                  <p className="font-medium text-gray-800">
+                    Secured <strong>1st Place</strong>, ANVESHANA 2024–25 Hubli–Dharwad
+                    Regional Level Science & Engineering Fair, Dharwad
+                  </p>
+                </li>
+
+                <li className="p-6 flex items-start gap-4">
+                  <span className="text-2xl">🥉</span>
+                  <p className="font-medium text-gray-800">
+                    Secured <strong>3rd Place</strong>, 9th National Techno-Exhibition 2025,
+                    Bengaluru
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
 
     </div>
