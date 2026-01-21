@@ -610,9 +610,9 @@ const engineeringTeam = [
   },
   {
     name: "Swasthik",
-    role: "Design & Analysis Head",
+    role: "Media & Communication Head",
     responsibility:
-      "Mechanical design, simulation, and structural analysis.",
+      "Brand communication, media outreach, content coordination, and public-facing communications.",
     photo: swasthik
   },
   {
