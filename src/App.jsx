@@ -150,7 +150,7 @@ const Footer = ({ navigate }) => (
         <div>
           <h4 className="text-white font-semibold mb-4">Connect With Us</h4>
           <div className="flex gap-4">
-            <a href="mrittikaagrotech25@gmail.com"
+            <a href="mailto:mrittikaagrotech25@gmail.com"
               aria-label="Email"
               className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition text-white"
             >
