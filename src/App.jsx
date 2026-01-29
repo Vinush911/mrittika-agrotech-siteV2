@@ -18,6 +18,7 @@ import g4 from './images/Award1.jpeg';
 import g5 from './images/Award2.jpeg';
 import g6 from './images/Award3.jpeg';
 import g7 from './images/Byndooru.jpg';
+import g8 from './images/Award4.jpg';
 
 import manoj from "./images/team/manoj.jpg";
 import deekshith from "./images/team/deekshith.jpg";
@@ -876,6 +877,10 @@ const AchievementsPage = () => (
              {/* Image Placeholder 3: Award */}
              <div className="aspect-[4/3] bg-gray-100 rounded-xl flex items-center justify-center border border-gray-200 relative overflow-hidden group">
                 <img src={g6} className="w-full h-full object-cover" />
+            </div>
+            {/* Image Placeholder 3: Award */}
+             <div className="aspect-[4/3] bg-gray-100 rounded-xl flex items-center justify-center border border-gray-200 relative overflow-hidden group">
+                <img src={g8} className="w-full h-full object-cover" />
             </div>
         </div>
 
