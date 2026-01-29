@@ -17,6 +17,7 @@ import g3 from './images/SprinklerImg.jpeg';
 import g4 from './images/Award1.jpeg';
 import g5 from './images/Award2.jpeg';
 import g6 from './images/Award3.jpeg';
+import g7 from './images/Byndooru.jpg';
 
 import manoj from "./images/team/manoj.jpg";
 import deekshith from "./images/team/deekshith.jpg";
@@ -983,6 +984,11 @@ const galleryItems = [
     src: g6,
     title: 'Team Recognition',
     desc: 'Institutional and grant recognition',
+  },
+  {
+    src: g7,
+    title: 'Best Overall Innovative Project - Byndooru Utsava',
+    desc: 'Recognition for innovative development of Arecanut Dehusker and Sprinkler systems',
   },
 ];
 const GalleryPage = () => (
